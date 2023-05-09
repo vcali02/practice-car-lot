@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply flex flex-col;
+}
+
+header {
+  @apply w-full h-auto text-slate-900 shadow-md text-center;
+}
+header > h1 {
+  @apply text-[50px];
+}
+
+.search,
+.new_car_form {
+  @apply flex justify-center mt-4;
+}
+.new_car_form button {
+  @apply border-2 border-slate-900 bg-gray-900 text-white ml-[20px];
+}
+#car-form div {
+  @apply flex justify-between;
+}
+
+#car-form div.right {
+  @apply border-2 border-solid border-slate-900 w-1/2 my-2;
+}
+#car-form div input,
+#car-form div select {
+  @apply w-full;
+}
+#car-form div label {
+  @apply my-2;
+}
+.MuiCardMedia-img {
+  @apply max-h-56;
+}
