@@ -10,7 +10,7 @@ import Button from "@mui/material/Button";
 
 import React, {useState} from "react";
 
-function Car() {
+function Car({car}) {
   const [showForm, setShowForm] = useState(false);
 
   return (
@@ -18,22 +18,22 @@ function Car() {
       {/**can edit below this */}
       {!showForm ? (
         <Card sx={{maxWidth: 350, height: 600}}>
-          <CardHeader title={`TITLE`} sx={{fontSize: "20px"}} />
+          <CardHeader title={car.car_make} sx={{fontSize: "20px"}} />
           <CardMedia
             component="img"
             height="250"
-            image="{/**image*/}"
-            alt={`YEAR MAKE MODEL`}
+            image={car.image}
+            alt={car.car_make}
           />
           <CardContent>
             <Typography variant="h5" color="text.secondary" align="center">
-              ${/**PRICE */}
+              ${car.price}
             </Typography>
           </CardContent>
           <CardContent>
-            <Typography paragraph>Condition: {/** */}</Typography>
-            <Typography paragraph>Mileage: {/** */}</Typography>
-            <Typography paragraph>Color: {/** */}</Typography>
+            <Typography paragraph>Condition: {car.condition}</Typography>
+            <Typography paragraph>Mileage: {car.mileage}</Typography>
+            <Typography paragraph>Color: {car.color}</Typography>
           </CardContent>
           <CardContent className="flex justify-around">
             <Button variant="contained">Edit</Button>
@@ -44,7 +44,7 @@ function Car() {
         <form id="car-form" className="sale-form">
           <div className="row">
             <div className="left">
-              <label htmlFor="car_model_year">YEAR</label>
+              <label htmlFor="car_model_year">{car.car_model_year}</label>
             </div>
             <div className="right">
               <select
@@ -73,7 +73,7 @@ function Car() {
 
           <div className="row">
             <div className="left">
-              <label htmlFor="car_make">MAKE</label>
+              <label htmlFor="car_make">{car.car_make}</label>
             </div>
             <div className="right">
               <input
@@ -89,7 +89,7 @@ function Car() {
 
           <div className="row">
             <div className="left">
-              <label htmlFor="car_model">MODEL</label>
+              <label htmlFor="car_model">{car.car_model}</label>
             </div>
             <div className="right">
               <input
@@ -104,7 +104,7 @@ function Car() {
 
           <div className="row">
             <div className="left">
-              <label htmlFor="price">PRICE</label>
+              <label htmlFor="price">{car.price}</label>
             </div>
             <div className="right">
               <input
@@ -122,7 +122,7 @@ function Car() {
 
           <div className="row">
             <div className="left">
-              <label htmlFor="condition">CONDITION</label>
+              <label htmlFor="condition">{car.condition}</label>
             </div>
             <div className="right">
               <select
@@ -139,7 +139,7 @@ function Car() {
 
           <div className="row">
             <div className="left">
-              <label htmlFor="mileage">MILEAGE</label>
+              <label htmlFor="mileage">{car.mileage}</label>
             </div>
             <div className="right">
               <input
@@ -155,7 +155,7 @@ function Car() {
 
           <div className="row">
             <div className="left">
-              <label htmlFor="color">COLOR</label>
+              <label htmlFor="color">{car.color}</label>
             </div>
             <div className="right">
               <input
@@ -171,7 +171,7 @@ function Car() {
 
           <div className="row" id="image_url_row">
             <div className="left">
-              <label htmlFor="image">IMAGE URL</label>
+              <label htmlFor="image">{car.image}</label>
             </div>
             <div className="right">
               <input type="text" name="image" id="image_url" />
@@ -190,3 +190,4 @@ function Car() {
 }
 
 export default Car;
+// alt={`YEAR MAKE MODEL`}
