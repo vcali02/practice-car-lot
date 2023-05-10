@@ -25,15 +25,13 @@ Go ahead and head to `http://localhost:3001/cars` in your browser to view the da
 
 CORE:
 
-- SEE ALL OF THE CARS ON THE LOAD WHEN THE APPLICATION LOADS
+- SEE ALL OF THE CARS ON THE LOAD WHEN THE APPLICATION LOADS -- *GET*--
 
-- ADD A NEW CAR LISTING TO THE LOT AND HAVE IT SHOW UP IN THE DOM
+- ADD A NEW CAR LISTING TO THE LOT AND HAVE IT SHOW UP IN THE DOM -- *POST*--
 
 - SEARCH FOR A CAR BY MODEL AND FILTER BY MANUFACTURER
 
 ADVANCED DELIVERABLES:
-
-- MAKE THE NEW CAR LISTING PERSIST
 
 - EDIT A LISTING AND HAVE THE CHANGE REFLECT ON THE SCREEN
 
@@ -47,11 +45,11 @@ EXTRA/BONUS:
 
 ## EXAMPLE
 
-### STEP 1: SHOW ALL THE CARS
+### STEP 1: SHOW ALL THE CARS   GET
 
 Look at your component hierarchy and decide where the cars should be loaded.
 
-### STEP 2: ADD A NEW CAR
+### STEP 2: ADD A NEW CAR     POST
 
 There is already a form built, but it isn't connected to anything. How can we get the form
 connected to our list of cars so that we can add to it?
@@ -64,11 +62,9 @@ _NOTE_ the search input text field only needs to look at the MODEL of the car
 
 When the user changes the dropdown, the list of cars should filter.
 When the user types a model name in the box, the list should filter.
-If both are used at the same time, the list should be filtered by both.
+If *BOTH* are used at the same time, the list should be filtered by *BOTH*.
 
 ### BONUS!
-
-- MAKE THE NEW CAR LISTING PERSIST
 
 - EDIT A LISTING AND HAVE THE CHANGE REFLECT ON THE SCREEN
 
@@ -76,6 +72,8 @@ If both are used at the same time, the list should be filtered by both.
 
 EXTRA/BONUS:
 
-- MAKE THE CHANGE YOU MAKE WHILE EDITING A VEHICLE PERSIST
+- MAKE THE CHANGE YOU MAKE WHILE EDITING A VEHICLE PERSIST -- _PATCH_ --
 
-- MARK THE VEHICLE AS SOLD AND HAVE IT PERSIST
+- MAKE IT SO WHEN THE FORM APPEARS IT ALREADY SHOWS THE CURRENT VALUES FOR EACH FIELD
+
+- MARK THE VEHICLE AS SOLD AND HAVE IT PERSIST -- _DELETE_ --
