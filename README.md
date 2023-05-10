@@ -1,6 +1,6 @@
 # Practice Challenge: CAR LOT
 
-Welcome to Flatiron Car Lot.
+Welcome to our Car Lot.
 
 This practice will help you prepare for the code challenge. You will need to put together
 a lot of previous learning to get through this one.
@@ -25,9 +25,9 @@ Go ahead and head to `http://localhost:3001/cars` in your browser to view the da
 
 CORE:
 
-- SEE ALL OF THE CARS ON THE LOAD WHEN THE APPLICATION LOADS -- *GET*--
+- SEE ALL OF THE CARS ON THE LOAD WHEN THE APPLICATION LOADS -- _GET_--
 
-- ADD A NEW CAR LISTING TO THE LOT AND HAVE IT SHOW UP IN THE DOM -- *POST*--
+- ADD A NEW CAR LISTING TO THE LOT AND HAVE IT SHOW UP IN THE DOM -- _POST_--
 
 - SEARCH FOR A CAR BY MODEL AND FILTER BY MANUFACTURER
 
@@ -45,11 +45,11 @@ EXTRA/BONUS:
 
 ## EXAMPLE
 
-### STEP 1: SHOW ALL THE CARS   GET
+### STEP 1: SHOW ALL THE CARS GET
 
 Look at your component hierarchy and decide where the cars should be loaded.
 
-### STEP 2: ADD A NEW CAR     POST
+### STEP 2: ADD A NEW CAR POST
 
 There is already a form built, but it isn't connected to anything. How can we get the form
 connected to our list of cars so that we can add to it?
@@ -62,7 +62,7 @@ _NOTE_ the search input text field only needs to look at the MODEL of the car
 
 When the user changes the dropdown, the list of cars should filter.
 When the user types a model name in the box, the list should filter.
-If *BOTH* are used at the same time, the list should be filtered by *BOTH*.
+If _BOTH_ are used at the same time, the list should be filtered by _BOTH_.
 
 ### BONUS!
 
